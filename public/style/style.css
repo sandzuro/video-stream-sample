@@ -139,7 +139,7 @@ a {
 #loading-screen .content {
   width: 80%;
   max-width: 400px;
-  color: black;
+  color: white;
 }
 #loading-screen .content > h1 {
   font-size: 2em;
@@ -408,7 +408,7 @@ a {
   padding: 0;
   font-size: 26px;
   text-align: center;
-  color: #E5E5E5;
+  color: #black;
   -webkit-transition: -webkit-transform 1s ease-in-out;
           transition: transform 1s ease-in-out;
   background: #363636;
