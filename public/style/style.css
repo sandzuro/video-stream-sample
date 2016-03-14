@@ -216,7 +216,7 @@ a {
           animation: rotateplane 3s infinite ease-in-out;
 }
 #progress {
-  background: #38b3f6;
+  background: white;
   height: 100%;
   width: 0;
   -webkit-transition: all 0.2s;
@@ -349,7 +349,7 @@ a {
   outline: none;
 }
 #bottom-bar {
-  display: none;
+  display: none !important;
   height: 40px;
   display: -webkit-box;
   display: -webkit-flex;
