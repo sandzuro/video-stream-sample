@@ -359,6 +359,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background: transparent;
+  opacity: 0;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
