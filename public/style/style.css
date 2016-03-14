@@ -207,7 +207,7 @@ a {
   height: 100px;
   margin: 0 auto;
   background: black;
-  border-radius: 5px;
+  border-radius: 55px;
   overflow: hidden;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
 }
