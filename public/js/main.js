@@ -67,7 +67,9 @@
 			CanvasWrapper.resize();
 
 			gooRunner.startGameLoop();
+
 			renderer.domElement.focus();
+			
 		}).then(null, function (error) {
 			// If something goes wrong, 'error' is the error message from the engine.
 			console.error(error);
@@ -107,7 +109,8 @@
 			.add(new goo.Dom3dSystem(gooRunner.renderer))
 			.add(new goo.TimelineSystem())
 			.add(new goo.PhysicsSystem())
-			.add(new goo.ColliderSystem());
+			.add(new goo.ColliderSystem())
+			.add(new goo.ParticleSystemSystem());
 	}
 
 	/**
@@ -201,6 +204,10 @@
 		var maximizeButton = document.getElementById('maximize-button');
 		maximizeButton.addEventListener('click', maximize);
 		maximizeButton.addEventListener('touchstart', maximize);
+
+		var muteButton = document.getElementById('mute-button');
+		muteButton.addEventListener('click', toggleMute);
+		muteButton.addEventListener('touchstart', toggleMute);
 	}
 
 	/**
@@ -216,6 +223,23 @@
 			element.mozRequestFullScreen();
 		} else if (element.webkitRequestFullscreen) {
 			element.webkitRequestFullscreen();
+		}
+	}
+
+	/**
+	 * Mute sounds. Returns true if the new mute state is muted, and false otherwise.
+	 */
+	function toggleMute() {
+		var soundSystem = gooRunner.world.getSystem('SoundSystem');
+		var muteButton = document.getElementById('mute-button');
+		if(soundSystem.muted){
+			soundSystem.unmute();
+			muteButton.classList.add('icon-sound');
+			muteButton.classList.remove('icon-sound-mute');
+		} else {
+			soundSystem.mute();
+			muteButton.classList.add('icon-sound-mute');
+			muteButton.classList.remove('icon-sound');
 		}
 	}
 

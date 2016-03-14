@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<title>Stream Video - Goo Create</title>
+	<title>VRun - Goo Create</title>
 	<script>
 	// If you try to load a scene without a server, you're gonna have a bad time
 	if (window.location.protocol==='file:') {
@@ -45,12 +45,12 @@
 
 	<!-- og -->
 	
-	<meta property="og:image" content="res/82bf7ed923ebc675805e1fdd1abffe44582779af.png">
+	<meta property="og:image" content="res/9ce7d991e20821433d551c35728fae33d1eebc13.png">
 	
 	
-	<meta property="og:title" content="Stream Video"/>
-	<meta property="og:description" content="Made with Goo Create">
-	<meta property="og:updated_time" content="2016-02-26T12:29:06.559798+00:00"/>
+	<meta property="og:title" content="VRun"/>
+	<meta property="og:description" content="VR running with 360 video">
+	<meta property="og:updated_time" content="2016-03-11T22:13:09.844316+00:00"/>
 	<meta property="og:site_name" content="Goo Create"/>
 	<meta property="og:type" content="website"/>
 	<!-- /og -->
@@ -60,23 +60,25 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 
 	
-	<script src="//code.gooengine.com/0.15.30/lib/goo.js"></script>
+	<script src="//code.gooengine.com/0.15.33/lib/goo.js"></script>
 	
-	<script src="//code.gooengine.com/0.15.30/lib/cannon/cannon.min.js"></script>
+	<script src="//code.gooengine.com/0.15.33/lib/cannon/cannon.min.js"></script>
 	
-	<script src="//code.gooengine.com/0.15.30/lib/fsmpack.js"></script>
+	<script src="//code.gooengine.com/0.15.33/lib/fsmpack.js"></script>
 	
-	<script src="//code.gooengine.com/0.15.30/lib/quadpack.js"></script>
+	<script src="//code.gooengine.com/0.15.33/lib/quadpack.js"></script>
 	
-	<script src="//code.gooengine.com/0.15.30/lib/timelinepack.js"></script>
+	<script src="//code.gooengine.com/0.15.33/lib/timelinepack.js"></script>
 	
-	<script src="//code.gooengine.com/0.15.30/lib/scriptpack.js"></script>
+	<script src="//code.gooengine.com/0.15.33/lib/scriptpack.js"></script>
 	
-	<script src="//code.gooengine.com/0.15.30/lib/passpack.js"></script>
+	<script src="//code.gooengine.com/0.15.33/lib/passpack.js"></script>
 	
-	<script src="//code.gooengine.com/0.15.30/lib/animationpack.js"></script>
+	<script src="//code.gooengine.com/0.15.33/lib/particlepack.js"></script>
 	
-	<script src="//code.gooengine.com/0.15.30/lib/physicspack.js"></script>
+	<script src="//code.gooengine.com/0.15.33/lib/animationpack.js"></script>
+	
+	<script src="//code.gooengine.com/0.15.33/lib/physicspack.js"></script>
 	
 
 	
@@ -98,7 +100,9 @@
 				<div class="logo"></div>
 				<div id="progress"></div>
 			</div>
-			<h1>Stream Video</h1>
+			<h1>VRun</h1>
+			
+			<p>VR running with 360 video</p>
 			
 		</div>
 	</div>
@@ -116,38 +120,38 @@
 			<a class="logo-link" href="http://www.goocreate.com" target="_blank">
 				<span class="logo icon-logo"></span>
 			</a>
-			<div class="scene-name">Stream Video</div>
+			<div class="scene-name">VRun</div>
 			<div id="share-buttons">
 				<a
 					class="btn icon-facebook"
-					href="https://www.facebook.com/sharer/sharer.php?u=https%3A//c1.goote.ch/exports/bdcc5f6ea5d74cdb9849dfad115284a0/template.zip%3F2016-02-26T13%3A15%3A08.745844"
-					onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=500');return false;"
+					onclick="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=500');return false;"
 				></a><a
 					class="btn icon-googleplus"
-					href="https://plus.google.com/share?url=https%3A//c1.goote.ch/exports/bdcc5f6ea5d74cdb9849dfad115284a0/template.zip%3F2016-02-26T13%3A15%3A08.745844"
-					onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+					onclick="javascript:window.open('https://plus.google.com/share?url='+encodeURIComponent(location.href), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
 				></a><a
 					class="btn icon-twitter"
-					href="https://twitter.com/share?url=https%3A//c1.goote.ch/exports/bdcc5f6ea5d74cdb9849dfad115284a0/template.zip"
-					onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+					onclick="javascript:window.open('https://twitter.com/share?url='+encodeURIComponent(location.href), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
 				></a>
 			</div>
 			<div id="action-buttons">
 				<a
 					id="duplicate-button"
 					class="btn icon-fork"
-					href="https://create.goocreate.com/edit/62a046995300437f96bd042e2785acdf.scene"
+					href="https://create.goocreate.com/edit/49f8edb7fcc0471e964c33ad54196e20.scene"
 					target="_blank"
 				></a><button
 					id="maximize-button"
 					class="btn icon-maximize"
+				></button><button
+					id="mute-button"
+					class="btn icon-sound"
 				></button>
 			</div>
 		</div>
 	</div>
 
 	
-	<div id="fallback" style="background-image: url(res/82bf7ed923ebc675805e1fdd1abffe44582779af.png)">
+	<div id="fallback" style="background-image: url(res/9ce7d991e20821433d551c35728fae33d1eebc13.png)">
 	
 		<h1>WebGL not supported or not enabled</h1>
 	</div>
