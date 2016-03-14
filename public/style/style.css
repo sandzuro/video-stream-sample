@@ -206,7 +206,7 @@ a {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  background: white;
+  background: black;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
