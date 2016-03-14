@@ -349,7 +349,6 @@ a {
   outline: none;
 }
 #bottom-bar {
-  display: none !important;
   height: 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -425,6 +424,7 @@ a {
   background: #434343;
 }
 #bottom-bar .scene-name {
+  display: none !important;
   width: 100%;
   font-weight: 400;
   font-size: 16px;
@@ -501,6 +501,7 @@ a {
           flex-grow: 0;
 }
 #share-buttons {
+   display: none !important;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
