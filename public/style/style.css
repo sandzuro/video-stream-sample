@@ -32,6 +32,7 @@
 }
 .icon-fork:before {
   content: "\e64d";
+  display: none !important;
 }
 .icon-like:before {
   content: "\e649";
