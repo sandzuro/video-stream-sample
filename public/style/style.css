@@ -139,7 +139,7 @@ a {
 #loading-screen .content {
   width: 80%;
   max-width: 400px;
-  color: #E5E5E5;
+  color: black;
 }
 #loading-screen .content > h1 {
   font-size: 2em;
