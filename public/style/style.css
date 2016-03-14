@@ -216,7 +216,7 @@ a {
           animation: rotateplane 3s infinite ease-in-out;
 }
 #progress {
-  background: white;
+  background: gray;
   height: 100%;
   width: 0;
   -webkit-transition: all 0.2s;
