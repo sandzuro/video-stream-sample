@@ -462,7 +462,7 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  background: #1D1D1D;
+  background: black;
 }
 #bottom-bar .btn:focus:hover,
 #bottom-bar .btn:hover {
@@ -562,7 +562,7 @@ body.configurable-theme.hide-bottom-bar #bottom-bar {
   display: none !important;
 }
 body.configurable-theme.transp-bottom-bar #bottom-bar {
-  background-color:transparent;
+  background-color:black;
 }
 body.configurable-theme.hide-share-buttons #share-buttons {
   display: none !important;
