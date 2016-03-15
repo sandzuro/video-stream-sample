@@ -562,7 +562,7 @@ body.configurable-theme.hide-bottom-bar #bottom-bar {
   display: none !important;
 }
 body.configurable-theme.transp-bottom-bar #bottom-bar {
-  background: none;
+  background-color:transparent;
 }
 body.configurable-theme.hide-share-buttons #share-buttons {
   display: none !important;
