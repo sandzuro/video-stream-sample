@@ -8,7 +8,7 @@
 
 	function setup(scene, loader) {
 		// Application code goes here!
-		gooRunner.renderer.downScale=2;
+
 		/*
 		 To get a hold of entities, one can use the World's selection functions:
 		 var allEntities = gooRunner.world.getEntities();                  // all

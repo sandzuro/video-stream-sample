@@ -66,7 +66,7 @@
 body {
   height: 100%;
   margin: 0;
-  background: black;
+  background: #1D1D1D;
   font-family: 'Roboto', Helvetica, sans-serif;
   letter-spacing: 0.03em;
   font-weight: 300;
@@ -125,7 +125,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  background: black;
+  opacity: 0;
+  background: #1D1D1D;
   text-align: center;
   pointer-events: none;
   z-index: 9999;
@@ -138,7 +139,7 @@ a {
 #loading-screen .content {
   width: 80%;
   max-width: 400px;
-  color: white;
+  color: #E5E5E5;
 }
 #loading-screen .content > h1 {
   font-size: 2em;
@@ -205,8 +206,8 @@ a {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  background: black;
-  border-radius: 55px;
+  background: #363636;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -215,7 +216,7 @@ a {
           animation: rotateplane 3s infinite ease-in-out;
 }
 #progress {
-  background: #1a1a1a;
+  background: #38b3f6;
   height: 100%;
   width: 0;
   -webkit-transition: all 0.2s;
@@ -357,8 +358,7 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: transparent;
-  opacity: 0;
+  background: #1D1D1D;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -408,10 +408,10 @@ a {
   padding: 0;
   font-size: 26px;
   text-align: center;
-  color: black;
+  color: #E5E5E5;
   -webkit-transition: -webkit-transform 1s ease-in-out;
           transition: transform 1s ease-in-out;
-  background: black;
+  background: #363636;
 }
 #bottom-bar .logo:focus:hover,
 #bottom-bar .logo:hover {
@@ -424,11 +424,10 @@ a {
   background: #434343;
 }
 #bottom-bar .scene-name {
-  display: none !important;
   width: 100%;
   font-weight: 400;
   font-size: 16px;
-  color: #s;
+  color: #E5E5E5;
   text-transform: uppercase;
   margin-left: 20px;
   white-space: nowrap;
@@ -501,7 +500,6 @@ a {
           flex-grow: 0;
 }
 #share-buttons {
-   display: none !important;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
