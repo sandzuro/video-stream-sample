@@ -763,7 +763,7 @@
             "scriptRef": "8e4efdba57834dc2b90aef72b3a40088.script",
             "sortValue": 4,
             "options": {
-              "absolute": false,
+              "absolute": true,
               "enabled": true,
               "lerp": 0.9
             }
